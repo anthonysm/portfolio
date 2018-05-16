@@ -201,7 +201,7 @@ path, line {
 @media (min-width: 575.98px) {
   #hamburger {
     display: none; } }
-section button {
+section .button button {
   position: absolute;
   margin-top: 30px;
   font-family: 'Myriad Pro';
@@ -209,12 +209,12 @@ section button {
   border-radius: 5%;
   border: none;
   background-color: #da0000; }
-  section button:hover {
+  section .button button:hover {
     background-color: #a10000; }
-  section button a {
+  section .button button a {
     text-decoration: none;
     color: #ffffff; }
-    section button a:hover {
+    section .button button a:hover {
       text-decoration: none;
       color: #ffffff; }
 section .cool {
@@ -255,8 +255,24 @@ section .cool {
         color: #ffffff; }
 
 @media (max-width: 575.98px) {
-  section button {
+  section .button {
     z-index: 1000; } }
+section .button1 button {
+  position: absolute;
+  margin-top: -137px;
+  font-family: 'Myriad Pro';
+  font-size: 1.75rem;
+  border-radius: 5%;
+  border: none;
+  background-color: #da0000; }
+  section .button1 button:hover {
+    background-color: #a10000; }
+  section .button1 button a {
+    text-decoration: none;
+    color: #ffffff; }
+    section .button1 button a:hover {
+      text-decoration: none;
+      color: #ffffff; }
 section h1 {
   margin-top: 15%;
   font-family: Raleway_Bold;
@@ -293,5 +309,20 @@ section .btn-primary {
   margin-bottom: 14%; }
   section .btn-primary:hover {
     background-color: #a10000; }
+
+section .projet {
+  padding-top: 160px; }
+  section .projet .visitez {
+    margin-top: -295px; }
+    section .projet .visitez .arrow {
+      width: 200px;
+      height: 150px; }
+    section .projet .visitez .permanent {
+      font-family: PermanentMarker_Regular;
+      font-size: 2rem; }
+
+@media (max-width: 575.98px) {
+  section .projet .visitez {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=style.css.map */

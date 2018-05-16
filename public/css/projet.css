@@ -1,0 +1,16 @@
+section .projet {
+  padding-top: 160px; }
+  section .projet .visitez {
+    margin-top: -295px; }
+    section .projet .visitez .arrow {
+      width: 200px;
+      height: 150px; }
+    section .projet .visitez .permanent {
+      font-family: PermanentMarker_Regular;
+      font-size: 2rem; }
+
+@media (max-width: 575.98px) {
+  section .projet .visitez {
+    visibility: hidden; } }
+
+/*# sourceMappingURL=projet.css.map */

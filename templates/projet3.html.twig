@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<section class="container-fluid">
+  <div class="button">
+    <button><a href="{{ path('home') }}">Retour</a></button>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="row align-items-center projet">
+        <div class="col-sm-12 col-md-6">
+          <img src="{{ asset('img/projet1.jpg') }}" alt="projet1">
+        </div>
+        <div class="col-sm-12 col-md-6 textez">
+          <div class="text-center">
+            <h1 class="nom">Poop Time</h1>
+            <hr>
+            <p class="description">Application web mobile qui permet de retrouver les toilettes publiques déjà enregistrer. Fait en collaboration avec Floriane SIMMET et Yohann THOREZ. Nous continuons toujours l'appli.</p>
+          </div>
+        </div>
+        <div class="hidden-sm col-sm-12 col-md-7 offset-md-4 visitez d-flex">
+          <img class="arrow" src="{{ asset('img/arrow.png') }}" alt="fleche">
+          <p class="permanent">Vous voulez visiter le projet cliquez sur l'image</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

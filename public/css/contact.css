@@ -1,3 +1,19 @@
+section .button1 button {
+  position: absolute;
+  margin-top: -137px;
+  font-family: 'Myriad Pro';
+  font-size: 1.75rem;
+  border-radius: 5%;
+  border: none;
+  background-color: #da0000; }
+  section .button1 button:hover {
+    background-color: #a10000; }
+  section .button1 button a {
+    text-decoration: none;
+    color: #ffffff; }
+    section .button1 button a:hover {
+      text-decoration: none;
+      color: #ffffff; }
 section h1 {
   margin-top: 15%;
   font-family: Raleway_Bold;

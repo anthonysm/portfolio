@@ -1,24 +1,26 @@
 section{
-  button{
-    position: absolute;
-    margin-top: 30px;
-    font-family: 'Myriad Pro';
-    font-size: 1.75rem;
-    border-radius: 5%;
-    border: none;
-    background-color: #da0000;
+  .button{
+    button{
+      position: absolute;
+      margin-top: 30px;
+      font-family: 'Myriad Pro';
+      font-size: 1.75rem;
+      border-radius: 5%;
+      border: none;
+      background-color: #da0000;
 
-    &:hover {
-      background-color: #a10000;
-    }
+      &:hover {
+        background-color: #a10000;
+      }
 
-    a {
-      text-decoration: none;
-      color: #ffffff;
-
-      &:hover{
+      a {
         text-decoration: none;
         color: #ffffff;
+
+        &:hover{
+          text-decoration: none;
+          color: #ffffff;
+        }
       }
     }
   }
@@ -76,7 +78,7 @@ section{
 
 @media (max-width: 575.98px){
   section{
-    button{
+    .button{
       z-index: 1000;
     }
   }

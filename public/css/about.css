@@ -1,4 +1,4 @@
-section button {
+section .button button {
   position: absolute;
   margin-top: 30px;
   font-family: 'Myriad Pro';
@@ -6,12 +6,12 @@ section button {
   border-radius: 5%;
   border: none;
   background-color: #da0000; }
-  section button:hover {
+  section .button button:hover {
     background-color: #a10000; }
-  section button a {
+  section .button button a {
     text-decoration: none;
     color: #ffffff; }
-    section button a:hover {
+    section .button button a:hover {
       text-decoration: none;
       color: #ffffff; }
 section .cool {
@@ -52,7 +52,7 @@ section .cool {
         color: #ffffff; }
 
 @media (max-width: 575.98px) {
-  section button {
+  section .button {
     z-index: 1000; } }
 
 /*# sourceMappingURL=about.css.map */
