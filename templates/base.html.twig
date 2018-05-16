@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio de ouf!</title>
+  {% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
+  {% endblock %}
+</head>
+<body class="no-scroll">
+  {% block body %}
+  <section class="container-fluid">
+    <div id="hamburger" class="hamburglar is-open" onclick="afficheMenu()">
+      <div id="top"></div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+       xml:space="preserve">
+        <path id="circle" fill="none" stroke-width="4" stroke-miterlimit="10" d="M16,32h32c0,0,11.723-0.306,10.75-11
+                                                                             c-0.25-2.75-1.644-4.971-2.869-7.151C50.728,7.08,42.767,2.569,33.733,2.054C33.159,2.033,32.599,2,32,2C15.432,2,2,15.432,2,32
+                                                                             c0,16.566,13.432,30,30,30c16.566,0,30-13.434,30-30C62,15.5,48.5,2,32,2S1.875,15.5,1.875,32"/>
+
+      </svg>
+      <div id="bottom"></div>
+    </div>
+    <div class="row">
+      <div id="gauche" class="closed">
+        <div id="content">
+          <div class="text-center">
+            <img class="logo" width="300" src="{{ asset('img/logo/logo.svg') }}" alt="logo">
+          </div>
+          <div class="text-center col-10 offset-1">
+            <h2 class="nom">SIMÕES MIRANDA</h2>
+            <h3 class="prenom">Anthony</h3>
+          </div>
+          <hr>
+          <div class="text-center">
+            <p>Je suis un Développeur Web Junior, brun, taille moyenne.</br>
+              Je suis passioné de la culture japonaise, le web, les ordinateur, les jeux vidéos.</p>
+          </div>
+          <div class="text-center a">
+            <a href="{{ path('about') }}">À propos</a>
+          </div>
+          <div class="text-center a">
+            <a href="{{ path('contact') }}">Contact</a>
+          </div>
+          <div class="text-center a">
+            <a href="{{ path('login') }}">Login</a>
+          </div>
+          {% if is_granted('ROLE_ADMIN') %}
+          <div class="text-center a">
+            <a href="{{ path('save_project') }}">Enregistrer un projets</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div id="droite">
+        <div class="projets text-center wow fadeInRightBig" id="un">
+          <a href="#">
+            <div>
+              <h2>Space Invaders</h2>
+              <p>Remake de A à Z du fameux jeu Space Invaders, en JavaScript.</p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="deux">
+          <a href="#">
+            <div>
+              <h2>IntegrationS</h2>
+              <p>Maintes et maintes integrations HTML5 CSS3.</p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="trois">
+          <a href="#">
+            <div>
+              <h2>Poop Time</h2>
+              <p>Petite appli pour savoir où sont les toilettes publiques les plus proches.</p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="quatre">
+          <a href="#">
+            <div>
+              <h2>WikiFilms</h2>
+              <p>On as répertorié les films préférer de toutes la promo 2018 de l'ACS de Vesoul.</p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="cinq">
+          <a href="#">
+            <div>
+              <h2>Wordpress</h2>
+              <p>Thème Wordpress + Intégration de ce propre thème. Et thème de blog de la promo 2018 de l'ACS Vesoul. </p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="six">
+          <a href="#">
+            <div>
+              <h2>Carte Postale</h2>
+              <p>Carte postale( rien qu'avec des animations SVG ) pour envoyer à la famille.</p>
+            </div>
+          </a>
+        </div>
+        <div class="projets text-center wow fadeInRightBig" id="sept">
+          <a href="#">
+            <div>
+              <h2>Explorateur de fichier</h2>
+              <p>Explorateur de fichier sur Internet.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+  {% block javascript %}
+  <script src="{{ asset('js/jquery-3.3.1.min.js') }}" charset="utf-8"></script>
+  <script src="{{ asset('js/wow.min.js') }}" charset="utf-8"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}" charset="utf-8"></script>
+  <script src="{{ asset('js/script.js') }}" charset="utf-8"></script>
+  {% endblock %}
+</body>
+</html>

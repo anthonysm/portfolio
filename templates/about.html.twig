@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<section class="container-fluid">
+  <div class="button">
+    <button><a href="#">Retour</a></button>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="cool row align-items-center">
+        <div class="col-sm-12 col-md-6 carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="{{ asset('img/mubariz-mehdizadeh-364026.jpg') }}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ asset('img/mubariz-mehdizadeh-364026.jpg') }}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ asset('img/mubariz-mehdizadeh-364026.jpg') }}" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 textez">
+          <div class="text-center">
+            <h1 class="nom">Moi-même</h1>
+            <p class="metier">Developper Web Junior</p>
+            <hr>
+            <p class="description">Bonjour je m'appelle Anthony, je suis un portugais particulier, vu que je suis en né en
+            Belgique et qu'en plus je suis beau gosse, voilà pourquoi je suis un portugais particulier. J'ai fait plusieurs
+            métiers dont celui que je pratique en ce moment: "LE CHÔMAGE". Non, plus sérieusement, je suis Développeur Web.
+            J'ai aussi des plan pour construire un bar Jeux Vidéo, donc si vous avez de la thune, bah contactez-moi parce que moi j'ai l'idée.</p>
+            <div class="row justify-content-center">
+              <div class="reseaux"><a href="https://www.facebook.com/anthony.simoesmiranda">
+                <i class="fab fa-facebook-square fa-2x"></i>
+              </a></div>
+              <div class="reseaux"><a href="https://twitter.com/Speri4n">
+                <i class="fab fa-twitter-square fa-2x"></i>
+              </a></div>
+              <div class="reseaux"><a href="https://www.linkedin.com/in/anthony-simoes-miranda-11b9a1153/">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a></div>
+              <div class="reseaux"><a href="https://github.com/anthonysm">
+                <i class="fab fa-github-square fa-2x"></i>
+              </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

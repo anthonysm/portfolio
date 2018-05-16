@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Raleway_Bold;
+  src: url("../font/Raleway-Bold.ttf"); }
+@font-face {
+  font-family: Raleway_Black;
+  src: url("../font/Raleway-Black.ttf"); }
+@font-face {
+  font-family: Raleway_ExtraBold;
+  src: url("../font/Raleway-ExtraBold.ttf"); }
+@font-face {
+  font-family: Raleway_ExtraLight;
+  src: url("../font/Raleway-ExtraLight.ttf"); }
+@font-face {
+  font-family: Raleway_Light;
+  src: url("../font/Raleway-Light.ttf"); }
+@font-face {
+  font-family: Raleway_Regular;
+  src: url("../font/Raleway-Regular.ttf"); }
+@font-face {
+  font-family: RockSalt_Regular;
+  src: url("../font/RockSalt-Regular.ttf"); }
+@font-face {
+  font-family: PermanentMarker_Regular;
+  src: url("../font/PermanentMarker-Regular.ttf"); }
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+section {
+  height: 100vh; }
+  section .row {
+    height: 100vh; }
+    section .row #gauche {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 50%;
+      overflow-y: hidden;
+      position: fixed; }
+      section .row #gauche .logo {
+        margin-top: 30px;
+        margin-bottom: 30px; }
+      section .row #gauche .nom {
+        font-family: Raleway_Bold;
+        margin-top: 20px;
+        font-size: 2.625rem; }
+      section .row #gauche .prenom {
+        font-size: 2rem; }
+      section .row #gauche hr {
+        height: 2px;
+        width: 100px;
+        border: none;
+        background-color: #da0000; }
+      section .row #gauche p {
+        font-family: Raleway_Light;
+        margin-top: 20px; }
+      section .row #gauche .text-center {
+        margin-top: 4%; }
+        section .row #gauche .text-center a {
+          font-family: Raleway_Bold;
+          font-size: 1.5rem;
+          color: black; }
+          section .row #gauche .text-center a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid #da0000; }
+
+@media (max-width: 575.98px) {
+  section .row #gauche {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    left: -100%;
+    width: 100%;
+    transition: left .3s linear; }
+    section .row #gauche .logo {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    section .row #gauche p {
+      display: none; }
+    section .row #gauche .text-center {
+      margin-top: 10px; }
+    section .row #gauche .a {
+      margin-top: 25px; }
+  section .row #gauche.menuOuvert {
+    left: 0%;
+    transition: left .3s linear; } }
+body::-webkit-scrollbar {
+  width: 5px; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cbcbcb;
+  outline: 1px solid slategrey; }
+
+section #droite {
+  background-color: grey;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  width: 50%; }
+  section #droite .projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    section #droite .projets h2 {
+      padding-top: 18%;
+      font-family: Raleway_Black;
+      font-size: 3rem; }
+    section #droite .projets p {
+      margin-top: 40px;
+      margin-bottom: 18%;
+      font-family: Raleway_Regular;
+      font-size: 1rem; }
+    section #droite .projets:hover {
+      background-color: #a10000; }
+    section #droite .projets a {
+      text-decoration: none;
+      color: #000000; }
+  section #droite #quatre,
+  section #droite #sept,
+  section #droite #un {
+    background-image: url("../img/projet1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 rgba(255, 255, 255, 0.4); }
+  section #droite #cinq,
+  section #droite #deux {
+    background-image: url("../img/projet2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 rgba(255, 255, 255, 0.4); }
+  section #droite #six,
+  section #droite #trois {
+    background-image: url("../img/projet3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 rgba(255, 255, 255, 0.4); }
+
+@media (max-width: 575.98px) {
+  section .row #droite {
+    width: 100%; } }
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.hamburglar {
+  transform: scale(1);
+  margin: 10px auto;
+  position: fixed;
+  z-index: 1000;
+  left: calc(50% - 34px);
+  display: block;
+  width: 68px;
+  height: 68px;
+  -webkit-touch-callout: none;
+  user-select: none; }
+
+#top, #bottom {
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+  background: #000000; }
+
+#top {
+  top: 19px;
+  left: 14px; }
+
+#bottom {
+  top: 41px;
+  left: 14px; }
+
+path, line {
+  stroke: #da0000;
+  stroke-linecap: round; }
+
+#top, #bottom {
+  transform-origin: 34px 2px;
+  transform: rotate(0deg);
+  transition: all 500ms cubic-bezier(0.8, -1.1, 0.5, 1.9); }
+
+#circle {
+  stroke-dasharray: 1 100 32 300;
+  stroke-dashoffset: 101;
+  transition: all 750ms ease; }
+
+.hamburglar.is-closed #circle {
+  stroke-dasharray: 1 100 190 300;
+  stroke-dashoffset: 1; }
+.hamburglar.is-closed #top {
+  transform: translateX(-4.5px) rotate(-45deg); }
+.hamburglar.is-closed #bottom {
+  transform: translateX(-4.5px) rotate(45deg); }
+
+@media (min-width: 575.98px) {
+  #hamburger {
+    display: none; } }
+section button {
+  position: absolute;
+  margin-top: 30px;
+  font-family: 'Myriad Pro';
+  font-size: 1.75rem;
+  border-radius: 5%;
+  border: none;
+  background-color: #da0000; }
+  section button:hover {
+    background-color: #a10000; }
+  section button a {
+    text-decoration: none;
+    color: #ffffff; }
+    section button a:hover {
+      text-decoration: none;
+      color: #ffffff; }
+section .cool {
+  height: 100vh; }
+  section .cool .carousel .carousel-indicators .active {
+    background-color: #da0000; }
+  section .cool .textez .nom {
+    font-family: Raleway_Bold;
+    margin-top: 20px;
+    font-size: 2.625rem; }
+  section .cool .textez .metier {
+    font-family: Raleway_Light;
+    font-size: 0.75rem; }
+  section .cool .textez hr {
+    width: 200px;
+    height: 2px;
+    border: none;
+    background-color: #da0000; }
+  section .cool .textez .description {
+    font-family: Raleway_Regular; }
+  section .cool .textez .row {
+    height: 100px; }
+    section .cool .textez .row .reseaux {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: #000000;
+      color: #ffffff; }
+      section .cool .textez .row .reseaux:hover {
+        background-color: #da0000; }
+      section .cool .textez .row .reseaux a {
+        text-decoration: none;
+        color: #ffffff; }
+
+@media (max-width: 575.98px) {
+  section button {
+    z-index: 1000; } }
+section h1 {
+  margin-top: 15%;
+  font-family: Raleway_Bold;
+  font-size: 2.625rem; }
+section hr {
+  background-color: #da0000;
+  height: 2px;
+  width: 100px;
+  border: none; }
+section p {
+  font-family: Raleway_Regular;
+  font-size: 1.2rem; }
+section label {
+  font-family: Raleway_Bold; }
+section input::placeholder {
+  font-family: Raleway_Regular; }
+section textarea {
+  font-family: Raleway_Regular;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  section textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+section .btn-primary {
+  background-color: #da0000;
+  border: none;
+  font-family: Raleway_Bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 14%; }
+  section .btn-primary:hover {
+    background-color: #a10000; }
+
+/*# sourceMappingURL=style.css.map */

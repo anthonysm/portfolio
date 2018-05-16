@@ -1,0 +1,67 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+section {
+  height: 100vh; }
+  section .row {
+    height: 100vh; }
+    section .row #gauche {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 50%;
+      overflow-y: hidden;
+      position: fixed; }
+      section .row #gauche .logo {
+        margin-top: 30px;
+        margin-bottom: 30px; }
+      section .row #gauche .nom {
+        font-family: Raleway_Bold;
+        margin-top: 20px;
+        font-size: 2.625rem; }
+      section .row #gauche .prenom {
+        font-size: 2rem; }
+      section .row #gauche hr {
+        height: 2px;
+        width: 100px;
+        border: none;
+        background-color: #da0000; }
+      section .row #gauche p {
+        font-family: Raleway_Light;
+        margin-top: 20px; }
+      section .row #gauche .text-center {
+        margin-top: 4%; }
+        section .row #gauche .text-center a {
+          font-family: Raleway_Bold;
+          font-size: 1.5rem;
+          color: black; }
+          section .row #gauche .text-center a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid #da0000; }
+
+@media (max-width: 575.98px) {
+  section .row #gauche {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    left: -100%;
+    width: 100%;
+    transition: left .3s linear; }
+    section .row #gauche .logo {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    section .row #gauche p {
+      display: none; }
+    section .row #gauche .text-center {
+      margin-top: 10px; }
+    section .row #gauche .a {
+      margin-top: 25px; }
+  section .row #gauche.menuOuvert {
+    left: 0%;
+    transition: left .3s linear; } }
+
+/*# sourceMappingURL=sidebar.css.map */

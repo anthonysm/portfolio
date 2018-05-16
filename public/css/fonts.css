@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Raleway_Bold;
+  src: url("../font/Raleway-Bold.ttf"); }
+@font-face {
+  font-family: Raleway_Black;
+  src: url("../font/Raleway-Black.ttf"); }
+@font-face {
+  font-family: Raleway_ExtraBold;
+  src: url("../font/Raleway-ExtraBold.ttf"); }
+@font-face {
+  font-family: Raleway_ExtraLight;
+  src: url("../font/Raleway-ExtraLight.ttf"); }
+@font-face {
+  font-family: Raleway_Light;
+  src: url("../font/Raleway-Light.ttf"); }
+@font-face {
+  font-family: Raleway_Regular;
+  src: url("../font/Raleway-Regular.ttf"); }
+@font-face {
+  font-family: RockSalt_Regular;
+  src: url("../font/RockSalt-Regular.ttf"); }
+@font-face {
+  font-family: PermanentMarker_Regular;
+  src: url("../font/PermanentMarker-Regular.ttf"); }
+
+/*# sourceMappingURL=fonts.css.map */

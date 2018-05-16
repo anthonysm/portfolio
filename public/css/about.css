@@ -1,0 +1,58 @@
+section button {
+  position: absolute;
+  margin-top: 30px;
+  font-family: 'Myriad Pro';
+  font-size: 1.75rem;
+  border-radius: 5%;
+  border: none;
+  background-color: #da0000; }
+  section button:hover {
+    background-color: #a10000; }
+  section button a {
+    text-decoration: none;
+    color: #ffffff; }
+    section button a:hover {
+      text-decoration: none;
+      color: #ffffff; }
+section .cool {
+  height: 100vh; }
+  section .cool .carousel .carousel-indicators .active {
+    background-color: #da0000; }
+  section .cool .textez .nom {
+    font-family: Raleway_Bold;
+    margin-top: 20px;
+    font-size: 2.625rem; }
+  section .cool .textez .metier {
+    font-family: Raleway_Light;
+    font-size: 0.75rem; }
+  section .cool .textez hr {
+    width: 200px;
+    height: 2px;
+    border: none;
+    background-color: #da0000; }
+  section .cool .textez .description {
+    font-family: Raleway_Regular; }
+  section .cool .textez .row {
+    height: 100px; }
+    section .cool .textez .row .reseaux {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: #000000;
+      color: #ffffff; }
+      section .cool .textez .row .reseaux:hover {
+        background-color: #da0000; }
+      section .cool .textez .row .reseaux a {
+        text-decoration: none;
+        color: #ffffff; }
+
+@media (max-width: 575.98px) {
+  section button {
+    z-index: 1000; } }
+
+/*# sourceMappingURL=about.css.map */

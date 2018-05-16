@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<section class="container-fluid">
+  <div class="container">
+    <div class="text-center">
+      <h1>Contactez-moi</h1>
+      <hr>
+      <p>Si vous voulez m’embaucher, me proposer un projet, discuter avec moi, sortir avec moi en RDV galant, aller au restaurant ...</br>
+        Tout ce que je viens listé au-dessus et plus encore, peut être fait avec ce simple formulaire.</p>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputNom">Nom</label>
+          <input type="text" class="form-control" id="inputNom" placeholder="Simoes Miranda">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPrenom">Prenom</label>
+          <input type="text" class="form-control" id="inputPrenom" placeholder="Anthony">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="anthony.....@........com">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputTel">Telephone</label>
+          <input type="number" class="form-control" id="inputTel" placeholder="076.......">
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea class="col-md-12" name="name" rows="8" placeholder="Votre message c'est ici..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary offset-4 col-4">Envoyer</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

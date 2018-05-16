@@ -1,0 +1,38 @@
+section h1 {
+  margin-top: 15%;
+  font-family: Raleway_Bold;
+  font-size: 2.625rem; }
+section hr {
+  background-color: #da0000;
+  height: 2px;
+  width: 100px;
+  border: none; }
+section p {
+  font-family: Raleway_Regular;
+  font-size: 1.2rem; }
+section label {
+  font-family: Raleway_Bold; }
+section input::placeholder {
+  font-family: Raleway_Regular; }
+section textarea {
+  font-family: Raleway_Regular;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  section textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+section .btn-primary {
+  background-color: #da0000;
+  border: none;
+  font-family: Raleway_Bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 14%; }
+  section .btn-primary:hover {
+    background-color: #a10000; }
+
+/*# sourceMappingURL=contact.css.map */

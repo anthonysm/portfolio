@@ -1,0 +1,25 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        in_memory:
+          memory:
+            users:
+              sperian:
+                password: $2y$12$o0ekvDOOZywRPTWiCWXwxe9BcQ01zQRjPr4XTa0lDCffWaDJossIW
+                roles: 'ROLE_ADMIN'
+    encoders:
+        Symfony\Component\Security\Core\User\User:
+          algorithm: bcrypt
+          cost: 12
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: ~
+            http_basic: ~
+            form_login:
+                login_path: login
+                check_path: login
+                always_use_default_target_path: true
+                default_target_path: /home
